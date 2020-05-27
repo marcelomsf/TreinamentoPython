@@ -9,5 +9,5 @@ tabuleiro = [X, O, X,
 #for casa in tabuleiro:
 #    print(casa)
 
-for i in range(len(tabuleiro)):
+for i in range(0,len(tabuleiro)):
     print(tabuleiro[i])
