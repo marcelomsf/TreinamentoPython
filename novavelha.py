@@ -19,7 +19,6 @@ marcador_valido = False
 
 jogador1 = VAZIO
 jogador2 = VAZIO
-
 while not marcador_valido:
     jogador1 = input("Escolha X ou O: ")
     if jogador1 == X or jogador1 == O:
