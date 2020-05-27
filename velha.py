@@ -22,3 +22,7 @@ for i in range(0,3):
 for i in range(0, 3, 2):
     if tabuleiro[0+i] == tabuleiro[4] == tabuleiro [8-i] != VAZIO:
         print("O jogo acabaou")
+
+# Empate
+if not VAZIO in tabuleiro:
+    print("Jogo empatou: Deu velha")
