@@ -22,3 +22,7 @@ print("Classificados: ",classificados)
 # 5. Lista de reservas
 reservas = aprovados[5:len(aprovados)]
 print("Reservas: ",reservas)
+# 6. Último Classificado
+print("Último classificado: ", classificados[-1])
+# 7.Último Reserva
+print("Último reserva: ", reservas[-1])
