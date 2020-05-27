@@ -28,3 +28,14 @@ print("Reservas: ",reservas)
 print("Último classificado: ", classificados[-1])
 # 7.Último Reserva
 print("Último reserva: ", reservas[-1])
+# 8. Modificar um elemento em uma lista
+aprovados[7] = "Oswaldo Cruz"
+if "Oswaldo Cruz" in aprovados:
+    print("Parabéns, Oswaldo")
+else:
+    print("Uma pena, não foi dessa vez")
+# 9. Adicionar um elemento ao final da lista
+aprovados.append("Elon Lages")
+#10. Remover um elemento da lista
+aprovados.remove("Oswaldo Cruz")
+print("Nova lista de aprovados: ", aprovados)
