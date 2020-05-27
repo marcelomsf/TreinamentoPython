@@ -12,5 +12,13 @@ print("Total de aprovados: ", len(aprovados))
 # 2. Primeira pessoa na condição de reserva
 print("Primeiro reserva: ",aprovados[5])
 # 3. Verificar se alguém está na lista
+if "Oswaldo Cruz" in aprovados:
+    print("Parabéns, Oswaldo")
+else:
+    print("Uma pena, não foi dessa vez")
 # 4. Listar de classificados
+classificados = aprovados[0:5]
+print("Classificados: ",classificados)
 # 5. Lista de reservas
+reservas = aprovados[5:len(aprovados)]
+print("Reservas: ",reservas)
