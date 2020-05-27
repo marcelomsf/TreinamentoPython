@@ -4,23 +4,25 @@ aprovados = [
     "Johanna Döbereiner", "Carolina de Jesus", "Leopoldo Nachbin", "Antonieta de Barros", "Lima Barreto"
     ]
 
+vagas = 5
+
 print("A lista: ", aprovados)
 print ("A primeira colocado: ", aprovados[0])
 
 # 1. Quantidade total de aprovados
 print("Total de aprovados: ", len(aprovados))
 # 2. Primeira pessoa na condição de reserva
-print("Primeiro reserva: ",aprovados[5])
+print("Primeiro reserva: ",aprovados[vagas])
 # 3. Verificar se alguém está na lista
 if "Oswaldo Cruz" in aprovados:
     print("Parabéns, Oswaldo")
 else:
     print("Uma pena, não foi dessa vez")
 # 4. Listar de classificados
-classificados = aprovados[0:5]
+classificados = aprovados[0:vagas]
 print("Classificados: ",classificados)
 # 5. Lista de reservas
-reservas = aprovados[5:len(aprovados)]
+reservas = aprovados[vagas:len(aprovados)]
 print("Reservas: ",reservas)
 # 6. Último Classificado
 print("Último classificado: ", classificados[-1])
