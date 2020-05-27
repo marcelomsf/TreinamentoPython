@@ -4,7 +4,7 @@ aprovados = [
     "Johanna Döbereiner", "Carolina de Jesus", "Leopoldo Nachbin", "Antonieta de Barros", "Lima Barreto"
     ]
 
-vagas = 5
+vagas = int(input("Digite o número de vagas: "))
 
 print("A lista: ", aprovados)
 print ("A primeira colocado: ", aprovados[0])
