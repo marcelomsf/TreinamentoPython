@@ -6,3 +6,10 @@ aprovados = [
 
 print("A lista: ", aprovados)
 print ("A primeira colocado: ", aprovados[0])
+
+# 1. Quantidade total de aprovados
+print("Total de aprovados: ", len(aprovados))
+# 2. Primeira pessoa na condição de reserva
+# 3. Verificar se alguém está na lista
+# 4. Listar de classificados
+# 5. Lista de reservas
