@@ -1,29 +1,24 @@
 X = "X"
 O = "O"
 VAZIO = " "
+TAMANHO_TABULEIRO = 9
 tabuleiro = []
+
 # tabuleiro = [0, 1, 2,
 #               3, 4, 5
 #               6, 7, 8]
 
 # Horizontal
-if tabuleiro[0] == tabuleiro[1] == tabuleiro [2]:
-    print("O jogo acabaou")
-if tabuleiro[3] == tabuleiro[4] == tabuleiro [5]:
-    print("O jogo acabaou")
-if tabuleiro[6] == tabuleiro[7] == tabuleiro [8]:
-    print("O jogo acabaou")
+for i in range(0, 9, 3):
+    if tabuleiro[i] == tabuleiro[i+1] == tabuleiro [i+2] != VAZIO:
+        print("O jogo acabou")
 
 # Vertical
-if tabuleiro[0] == tabuleiro[3] == tabuleiro [6]:
-    print("O jogo acabaou")
-if tabuleiro[1] == tabuleiro[4] == tabuleiro [7]:
-    print("O jogo acabaou")
-if tabuleiro[2] == tabuleiro[5] == tabuleiro [8]:
-    print("O jogo acabaou")
+for i in range(0,3):
+    if tabuleiro[i] == tabuleiro[i+3] == tabuleiro [i+6] != VAZIO:
+        print("O jogo acabaou")
 
 # Diagonal
-if tabuleiro[0] == tabuleiro[4] == tabuleiro [8]:
-    print("O jogo acabaou")
-if tabuleiro[2] == tabuleiro[4] == tabuleiro [6]:
-    print("O jogo acabaou")
+for i in range(0, 3, 2):
+    if tabuleiro[0+i] == tabuleiro[4] == tabuleiro [8-i] != VAZIO:
+        print("O jogo acabaou")
