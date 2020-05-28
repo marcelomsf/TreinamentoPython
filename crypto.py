@@ -19,19 +19,29 @@ limite_superior_maiusculo= ord('Z')
 limite_inferior_maiusculo = ord('A')
 letras_alfabeto = limite_supeior_minisculo - limite_inferior_minisculo + 1
 
-chave = 3
+chave = -3
 mensagem = "AbcdefghijklmnopqrstuvwxyZ"
-mensagem = mensagem.upper()
+mensagem = mensagem.lower()
 cifrada = ""
 for letra in mensagem:
-    # print(letra)
-    # indice = alfabeto.index(letra)
+    #achar no alfabeto a letra que seja chave 
     indice = ord(letra)
-    #nova_letra = alfabeto[(indice + chave)%tamanho_alfabeto]
-    novo_indice = (indice + chave)%tamanho_alfabeto
-    if (( novo_indice > limite_supeior_minisculo )or ( novo_indice > limite_superior_maiusculo and novo_indice < limite_inferior_minisculo)):
-        novo_indice = novo_indice - letras_alfabeto
-    
+    nova_letra = letra
+    #fluxo maiúsculo
+    if limite_inferior_maiusculo <= indice <= limite_superior_maiusculo:
+        novo_indice = ( indice + chave)%(limite_superior_maiusculo+1) + ( (indice + chave)//(limite_superior_maiusculo+1) )*limite_inferior_maiusculo
+        if indice + chave < limite_inferior_maiusculo:
+            novo_indice = novo_indice + letras_alfabeto
+        nova_letra = chr(novo_indice)
+    #fluxo minusculas
+    elif indice in range (limite_inferior_minisculo, limite_supeior_minisculo +1):
+        novo_indice = (indice + chave)%(limite_supeior_minisculo+1) + ( (indice + chave)//(limite_supeior_minisculo+1))*limite_inferior_minisculo
+        if indice + chave < limite_inferior_minisculo:
+            novo_indice = novo_indice + letras_alfabeto
+        nova_letra = chr(novo_indice)
+
+ 
+
 
     nova_letra = chr( novo_indice )
     cifrada = cifrada + nova_letra
